@@ -10,6 +10,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/ox
 WORKDIR /var/www/html
 RUN unzip oxer.zip
 RUN cp -rvf oxer-html/*
-RUN rm -rf __MACOSX oxer-html oxer.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
